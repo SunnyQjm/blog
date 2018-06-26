@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 建明 | Ming.J 
+title: 建明 | Ming.J
 subtitle: 至清  至静
-description: 
+description:
 author: 建明 | Ming.J
 language: zh-Hans
 timezone:
@@ -25,9 +25,11 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: 
-    - 2048/** 
+skip_render:
+    - 2048/**
     - feedback/**
+    - calculator/**
+    - xueban_upload/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -44,7 +46,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -97,6 +99,8 @@ deploy:
   repo: https://github.com/SunnyQjm/sunnyqjm.github.io.git
 - type: git
   repo: root@39.106.138.103:blog.git
+- type: git
+  repo: git@123.207.96.66:/var/git/blog.git
 #- type: git
 #  repo: git@hexo:/home/git/blog/hexo.git
 #  branch: master
